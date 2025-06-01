@@ -28,3 +28,22 @@ A fun, interactive Farcaster mini app where users can compete in a virtual bottl
 
 ```bash
 npm install
+2. Run the app locally
+
+npm run dev
+3. Build for production
+bash
+Kopyala
+Düzenle
+npm run build
+📁 Project Structure
+
+/components     → Reusable UI components  
+/hooks          → Custom React hooks  
+/constants      → Static configuration  
+/env.local      → Local environment variables  
+🧪 Testing
+TBD – Test setup and coverage instructions.
+
+📄 License
+MIT – [=xbasar]
