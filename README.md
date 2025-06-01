@@ -32,9 +32,7 @@ npm install
 
 npm run dev
 3. Build for production
-bash
-Kopyala
-Düzenle
+
 npm run build
 📁 Project Structure
 
