@@ -1,14 +1,30 @@
-# Run and deploy your AI Studio app
+# 🌀 Bottle Flip Challenge – A Farcaster Mini App
 
-This contains everything you need to run your app locally.
+A fun, interactive Farcaster mini app where users can compete in a virtual bottle flip challenge. Built with React + TypeScript + Vite, and designed to integrate seamlessly with the Farcaster ecosystem.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🚀 Features
 
+- 🎮 Interactive bottle flip game mechanics  
+- 📡 Farcaster frame support for mini app embedding  
+- 🧠 TypeScript for type safety and scalability  
+- ⚡ Lightning-fast dev experience using Vite  
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **TypeScript**
+- **Vite**
+- **Farcaster Frames**
+
+---
+
+## 📦 Getting Started
+
+### 1. Install dependencies
+
+```bash
+npm install
