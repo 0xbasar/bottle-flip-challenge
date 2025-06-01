@@ -63,4 +63,4 @@ _TBD_ – Test setup and coverage instructions.
 
 ## 📄 License
 
-MIT – [Your Name or GitHub Handle]
+MIT – [0xbasar]
