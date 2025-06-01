@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍾</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bottle Flip Challenge - Frame & App</title>
+
+    <!-- Standard Open Graph Meta Tags (Important for Farcaster) -->
+    <meta property="og:title" content="Bottle Flip Challenge!" />
+    <meta property="og:description" content="Try the Bottle Flip Challenge directly on Farcaster or play the full game!" />
+    <!-- Replace with a URL to a compelling preview image for your game (e.g., a welcome screen) -->
+    <!-- Recommended aspect ratio for fc:frame:image is 1.91:1 or 1:1 -->
+    <meta property="og:image" content="YOUR_HOSTED_WELCOME_IMAGE_URL_1.91_1.png" /> 
+    <meta property="og:url" content="YOUR_APP_URL_WHERE_THIS_HTML_IS_SERVED" />
+
+    <!-- Farcaster Frame Meta Tags -->
+    <meta property="fc:frame" content="vNext" />
+    <!-- This image will be displayed in the Frame. Replace with your actual image URL. -->
+    <meta property="fc:frame:image" content="YOUR_HOSTED_WELCOME_IMAGE_URL_1.91_1.png" />
+    <meta property="fc:frame:image:aspect_ratio" content="1.91:1" />
+
+    <!-- This is the URL on your backend that will handle button clicks -->
+    <!-- Example: https://your-backend-service.com/api/bottle-flip-frame -->
+    <meta property="fc:frame:post_url" content="YOUR_BACKEND_POST_URL_FOR_FRAME_ACTIONS" />
+
+    <!-- Define up to 4 buttons -->
+    <meta property="fc:frame:button:1" content="Flip Bottle!" />
+    <!-- Optional: You can add more buttons if needed, e.g., a link to your full interactive game -->
+    <!-- <meta property="fc:frame:button:2" content="Play Full Game" /> -->
+    <!-- <meta property="fc:frame:button:2:action" content="link" /> -->
+    <!-- <meta property="fc:frame:button:2:target" content="URL_TO_YOUR_FULL_REACT_GAME_SEPARATELY_HOSTED" /> -->
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Importmap for resolving ES module imports for React -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.1.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+        "react/": "https://esm.sh/react@^19.1.0/"
+      }
+    }
+    </script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <!-- This div is where the React application will be mounted. -->
+    <div id="root"></div>
+
+    <!-- Fallback content for when viewed outside a Farcaster client or if JS is disabled -->
+    <!-- This part will be replaced by React if it loads successfully. -->
+    <noscript>
+      <div style="font-family: sans-serif; padding: 20px; text-align: center;">
+        <h1>Bottle Flip Challenge</h1>
+        <p>This application requires JavaScript to run. Please enable it in your browser settings.</p>
+        <p>If you are seeing this on a Farcaster client, it might be configured to show this page as a Frame.</p>
+        <img src="YOUR_HOSTED_WELCOME_IMAGE_URL_1.91_1.png" alt="Bottle Flip Challenge Welcome" style="max-width: 100%; height: auto; border: 1px solid #ccc;" />
+      </div>
+    </noscript>
+    
+    <!-- Script to load and run your React application -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
